@@ -48,3 +48,18 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1
 2024-09-09 11:41:34.160 R[80363:4890606] +[CATransaction synchronize] called within transaction
 2024-09-09 11:41:34.453 R[80363:4890606] +[CATransaction synchronize] called within transaction
 > # Hypothesis testing: weight of car is inverslely proportional to the mpg
+> # Apply the correlation test to your hypothesis
+> res <- cor.test(my_data$wt, my_data$mpg, method = "pearson") 
+> 
+> res
+
+	Pearson's product-moment correlation
+
+data:  my_data$wt and my_data$mpg
+t = -9.559, df = 30, p-value = 1.294e-10
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.9338264 -0.7440872
+sample estimates:
+       cor 
+-0.8676594 
