@@ -45,4 +45,22 @@ The following objects are masked from ‘package:base’:
 2024-09-20 11:33:52.823 R[4212:6372069] +[CATransaction synchronize] called within transaction
 2024-09-20 11:34:07.950 R[4212:6372069] +[CATransaction synchronize] called within transaction
 2024-09-20 11:34:08.233 R[4212:6372069] +[CATransaction synchronize] called within transaction
+> df <- read.csv(PATH)
+2024-09-20 11:36:42.147 R[4212:6372069] +[CATransaction synchronize] called within transaction
+2024-09-20 11:36:42.479 R[4212:6372069] +[CATransaction synchronize] called within transaction
+2024-09-20 11:36:55.983 R[4212:6372069] +[CATransaction synchronize] called within transaction
+2024-09-20 11:36:56.284 R[4212:6372069] +[CATransaction synchronize] called within transaction
+> head(df)
+  X time poison treat
+1 1 0.31      1     A
+2 2 0.45      1     A
+3 3 0.46      1     A
+4 4 0.43      1     A
+5 5 0.36      2     A
+6 6 0.29      2     A
+2024-09-20 11:38:09.185 R[4212:6372069] +[CATransaction synchronize] called within transaction
+2024-09-20 11:38:09.530 R[4212:6372069] +[CATransaction synchronize] called within transaction
+2024-09-20 11:38:17.812 R[4212:6372069] +[CATransaction synchronize] called within transaction
+2024-09-20 11:38:18.114 R[4212:6372069] +[CATransaction synchronize] called within transaction
+2024-09-20 11:38:18.117 R[4212:6372069] +[CATransaction synchronize] called within transaction
 > 
