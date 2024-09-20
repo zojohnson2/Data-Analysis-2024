@@ -1,0 +1,48 @@
+
+R version 4.3.1 (2023-06-16) -- "Beagle Scouts"
+Copyright (C) 2023 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin20 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[R.app GUI 1.79 (8238) x86_64-apple-darwin20]
+
+[Workspace restored from /Users/zoejohnson/.RData]
+[History restored from /Users/zoejohnson/.Rapp.history]
+
+2024-09-20 11:14:40.914 R[4212:6372069] +[CATransaction synchronize] called within transaction
+2024-09-20 11:14:41.268 R[4212:6372069] +[CATransaction synchronize] called within transaction
+> # Author: Zoe, Date September 20,2024, Purpose: Calculate ANOVA analysis.
+> library(dplyr)
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+> # Hypothesis: treatment type B is the most effectove treatment on poison type 1-Alternate hypothesis.
+> # NULL: There is no significant difference between treatment groups
+> # read your sample dataset for the test
+>  PATH <- "https://raw.githubusercontent.com/guru99-edu/R-Programming/master/poisons.csv" 
+2024-09-20 11:33:52.486 R[4212:6372069] +[CATransaction synchronize] called within transaction
+2024-09-20 11:33:52.823 R[4212:6372069] +[CATransaction synchronize] called within transaction
+2024-09-20 11:34:07.950 R[4212:6372069] +[CATransaction synchronize] called within transaction
+2024-09-20 11:34:08.233 R[4212:6372069] +[CATransaction synchronize] called within transaction
+> 
