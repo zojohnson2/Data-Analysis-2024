@@ -22,34 +22,9 @@ Type 'q()' to quit R.
 [Workspace restored from /Users/zoejohnson/.RData]
 [History restored from /Users/zoejohnson/.Rapp.history]
 
-2024-09-20 11:14:40.914 R[4212:6372069] +[CATransaction synchronize] called within transaction
-2024-09-20 11:14:41.268 R[4212:6372069] +[CATransaction synchronize] called within transaction
-> # Author: Zoe, Date September 20,2024, Purpose: Calculate ANOVA analysis.
-> library(dplyr)
-
-Attaching package: ‘dplyr’
-
-The following objects are masked from ‘package:stats’:
-
-    filter, lag
-
-The following objects are masked from ‘package:base’:
-
-    intersect, setdiff, setequal, union
-
-> # Hypothesis: treatment type B is the most effectove treatment on poison type 1-Alternate hypothesis.
-> # NULL: There is no significant difference between treatment groups
-> # read your sample dataset for the test
->  PATH <- "https://raw.githubusercontent.com/guru99-edu/R-Programming/master/poisons.csv" 
-2024-09-20 11:33:52.486 R[4212:6372069] +[CATransaction synchronize] called within transaction
-2024-09-20 11:33:52.823 R[4212:6372069] +[CATransaction synchronize] called within transaction
-2024-09-20 11:34:07.950 R[4212:6372069] +[CATransaction synchronize] called within transaction
-2024-09-20 11:34:08.233 R[4212:6372069] +[CATransaction synchronize] called within transaction
-> df <- read.csv(PATH)
-2024-09-20 11:36:42.147 R[4212:6372069] +[CATransaction synchronize] called within transaction
-2024-09-20 11:36:42.479 R[4212:6372069] +[CATransaction synchronize] called within transaction
-2024-09-20 11:36:55.983 R[4212:6372069] +[CATransaction synchronize] called within transaction
-2024-09-20 11:36:56.284 R[4212:6372069] +[CATransaction synchronize] called within transaction
+> PATH <- "https://raw.githubusercontent.com/guru99-edu/R-Programming/master/poisons.csv" 
+>  df <- read.csv(PATH)
+> 
 > head(df)
   X time poison treat
 1 1 0.31      1     A
@@ -58,9 +33,27 @@ The following objects are masked from ‘package:base’:
 4 4 0.43      1     A
 5 5 0.36      2     A
 6 6 0.29      2     A
-2024-09-20 11:38:09.185 R[4212:6372069] +[CATransaction synchronize] called within transaction
-2024-09-20 11:38:09.530 R[4212:6372069] +[CATransaction synchronize] called within transaction
-2024-09-20 11:38:17.812 R[4212:6372069] +[CATransaction synchronize] called within transaction
-2024-09-20 11:38:18.114 R[4212:6372069] +[CATransaction synchronize] called within transaction
-2024-09-20 11:38:18.117 R[4212:6372069] +[CATransaction synchronize] called within transaction
+> # Apply the ANOVA Test function anova_one_way <-aov(time~poison, data=df)
+>  anova_one_way <-aov(time~poison, data=df)
+> anova_one_way
+Call:
+   aov(formula = time ~ poison, data = df)
+
+Terms:
+                   poison Residuals
+Sum of Squares  0.9316125 2.0734688
+Deg. of Freedom         1        46
+
+Residual standard error: 0.2123097
+Estimated effects may be unbalanced
+> summary(anova_one_way)
+            Df Sum Sq Mean Sq F value   Pr(>F)    
+poison       1 0.9316  0.9316   20.67 3.96e-05 ***
+Residuals   46 2.0735  0.0451                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+2024-09-23 11:41:35.444 R[7552:6595650] +[CATransaction synchronize] called within transaction
+2024-09-23 11:41:35.772 R[7552:6595650] +[CATransaction synchronize] called within transaction
+2024-09-23 11:41:46.026 R[7552:6595650] +[CATransaction synchronize] called within transaction
+2024-09-23 11:41:46.309 R[7552:6595650] +[CATransaction synchronize] called within transaction
 > 
