@@ -1,0 +1,15 @@
+﻿Example 1: House Price Prediction
+* Dependent Variable: House Price
+* Independent Variables: Square Footage, Number of Bedrooms, Number of Bathrooms, Age of the House, Location (Neighborhood)
+Example 2: Student Performance
+* Dependent Variable: Student's Final Grade
+* Independent Variables: Hours Studied, Attendance Rate, Previous Grades, Teacher Experience
+Example 3: Crop Yield
+* Dependent Variable: Crop Yield (Tons per Acre)
+* Independent Variables: Amount of Fertilizer Used, Amount of Water Used, Type of Soil, Temperature, Rainfall
+Example 4: Sales Prediction
+* Dependent Variable: Sales Revenue
+* Independent Variables: Marketing Budget, Advertising Spend, Price of Product, Competitor Sales, Seasonality
+Example 5: Patient Health
+* Dependent Variable: Patient's Blood Pressure
+* Independent Variables: Age, Weight, Exercise Frequency, Diet, Stress Level
